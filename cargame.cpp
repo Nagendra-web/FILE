@@ -8,8 +8,8 @@
 
 using namespace std;
 
-const int WIDTH = 20;
-const int HEIGHT = 20;
+const int WIDTH = 200;
+const int HEIGHT = 200;
 const char PLAYER = 'A';
 const char OBSTACLE = '#';
 const char ROAD = ' ';
