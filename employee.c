@@ -7,10 +7,10 @@
 #define MAX_DEPT 30
 
 typedef struct {
-    int id;
-    char name[MAX_NAME];
-    char department[MAX_DEPT];
-    float salary;
+    int ids;
+    char names[MAX_NAME];
+    char departments[MAX_DEPT];
+    float salarys;
 } Employee;
 
 // Add employee to file
