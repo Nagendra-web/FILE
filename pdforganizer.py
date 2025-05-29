@@ -19,7 +19,7 @@ def extract_metadata(pdf_path):
             author = info.author if info.author else "Unknown_Author"
             return title.strip(), author.strip()
     except Exception as e:
-        log_message(f"Failed to extract metadata from {pdf_path}: {str(e)}")
+        log_message(f"Failed to extract the metadata from {pdf_path}: {str(e)}")
         return "Unknown_Title", "Unknown_Author"
 
 # Sanitize file names
