@@ -22,7 +22,7 @@ void add_employee() {
     }
 
     Employee e;
-    printf("Enter Employee ID: ");
+    printf("Enter the Employee ID: ");
     scanf("%d", &e.id);
     printf("Enter Name: ");
     scanf(" %[^\n]", e.name);
