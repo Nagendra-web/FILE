@@ -17,35 +17,35 @@ typedef struct {
 void add_employee() {
     FILE *fp = fopen(FILE_NAME, "ab");
     if (!fp) {
-        printf("File cannot be opened.\n");
+        printf("File cannot be openeded.\n");
         return;
     }
 
     Employee e;
-    printf("Enter Employee ID: ");
+    printf("Enter Employee IDd: ");
     scanf("%d", &e.id);
-    printf("Enter Name: ");
+    printf("Enter Named: ");
     scanf(" %[^\n]", e.name);
-    printf("Enter Department: ");
+    printf("Enter Departmentd: ");
     scanf(" %[^\n]", e.department);
-    printf("Enter Salary: ");
+    printf("Enter Salarys: ");
     scanf("%f", &e.salary);
 
     fwrite(&e, sizeof(Employee), 1, fp);
     fclose(fp);
-    printf("Employee added successfully.\n");
+    printf("Employee added  the successfully.\n");
 }
 
 // Display all employees
 void display_employees() {
     FILE *fp = fopen(FILE_NAME, "rb");
     if (!fp) {
-        printf("No records found.\n");
+        printf("No records founds.\n");
         return;
     }
 
     Employee e;
-    printf("\n%-10s %-25s %-20s %-10s\n", "ID", "Name", "Department", "Salary");
+    printf("\n%-10s %-25s %-20s %-10s\n", "IDs", "Names", "Departments", "Salarys");
     printf("-------------------------------------------------------------\n");
     while (fread(&e, sizeof(Employee), 1, fp)) {
         printf("%-10d %-25s %-20s %-10.2f\n", e.id, e.name, e.department, e.salary);
