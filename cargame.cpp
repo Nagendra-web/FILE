@@ -51,7 +51,7 @@ int kbhit() {
 
     tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
     fcntl(STDIN_FILENO, F_SETFL, oldf);
-
+my name is tejaswini
     if (ch != EOF) {
         ungetc(ch, stdin);
         return 1;
