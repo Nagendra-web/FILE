@@ -150,7 +150,7 @@ public:
             usleep(100000); // 100 ms
         }
         disableRawMode();
-        cout << "\nGame Over! Final Score: " << score << endl;
+        cout << "\nGame is Over! Final Score: " << score << endl;
     }
 };
 
